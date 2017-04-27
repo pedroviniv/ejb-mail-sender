@@ -1,0 +1,7 @@
+io\github\kieckegard\example\ejb\jms\mail\ejbs\EmailRequestListener.class
+io\github\kieckegard\example\ejb\jms\mail\ejbs\EmailSender.class
+io\github\kieckegard\example\ejb\jms\mail\domain\SimpleMessageBuilder.class
+io\github\kieckegard\example\ejb\jms\mail\ejbs\EmailRequester.class
+io\github\kieckegard\example\ejb\jms\mail\domain\Email.class
+io\github\kieckegard\example\ejb\jms\mail\ejbs\EmailRequesterBean.class
+io\github\kieckegard\example\ejb\jms\mail\controller\EmailController.class

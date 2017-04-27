@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Facelet Title</title>
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+    </h:head>
+    <style>
+        .panel {
+            margin-top: 50px;
+        }
+        
+        .panel-body {
+            padding: 30px;
+        }
+        
+        .panel-primary > .panel-heading h1,h2,h3,h4,h5 {
+            color: #fff;
+        }
+    </style>
+    <h:body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <center><h4>Envie um e-mail!</h4></center>
+                        </div>
+                        <div class="panel-body">
+                            <h:form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="to">De: </label>
+                                            <h:inputText class="form-control" id="from" 
+                                                         a:placeholder="E-mail remetente" 
+                                                         value="#{emailCtrl.email.from}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="to">Para: </label>
+                                            <h:inputText class="form-control" id="to" 
+                                                         a:placeholder="E-mail destinatário" 
+                                                         value="#{emailCtrl.email.to}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mailText">Assunto: </label>
+                                    <h:inputText class="form-control" id="subject" 
+                                                 a:placeholder="Assunto do e-mail" 
+                                                 value="#{emailCtrl.email.subject}" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="mailText">Mensagem: </label>
+                                    <h:inputTextarea class="form-control" id="text" 
+                                                     a:placeholder="Texto da mensagem" 
+                                                     value="#{emailCtrl.email.text}" />
+                                </div>
+
+                                <h:commandButton class="btn btn-primary" value="Enviar" action="#{emailCtrl.send()}" />
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
+

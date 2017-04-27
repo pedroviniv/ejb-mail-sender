@@ -3,7 +3,7 @@
 Before build and deploy the project you should create a few resources
 on your server.
 
-**I'm using the resources above:**
+**I'm using the resources below:**
 - javax.jms.ConnectionFactory "jms/dac/dacConnectionFactory"
 - javax.jms.Queue named "jms/dac/newEmailsQueue"
 - javax.jms.Queue named "jms/dac/waitingEmailsQueue"

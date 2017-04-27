@@ -39,7 +39,7 @@ public class EmailSender {
     @Resource(lookup = "jms/dac/waitingEmailsQueue")
     private Queue waitingEmailsQueue;
     
-    @Resource(lookup = "dac/rhecruta/javaMailSession")
+    @Resource(lookup = "javamail/javaMailSession")
     private Session session;
     
     public void send(Email email) {
